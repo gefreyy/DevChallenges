@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+h1 {
+    width: 60%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.25rem;
+    margin-top: 1.5rem;
+}
+
+.separator {
+    margin: 2rem 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 800px; /* Usé esto para lograr centrar los articulos de manera correcta sin que haya desborde ;p */
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.yap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.img-test {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 15px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4D5562;
+    margin-top: 1rem;
+}
+
+@media (max-width:820px) {
+    .card {
+        max-width: 550px;
+        padding: 0.50rem;
+    }
+}
+
+@media (max-width: 412px) {
+    h1 {
+        width: 90%;
+    }
+    .card {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem;
+        margin-bottom: 0;
+    }
+
+    .img-test {
+        width: 50%;
+    }
+
+    .yap {
+        margin-left: 0;
+        margin-top: 1.25rem;
+    }
+}
